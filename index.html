@@ -4,102 +4,180 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Confronto GPU - RTX 5070 vs RX 9060 XT</title>
+
 <style>
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f9;
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-.container {
-    max-width: 1000px;
-    margin: 40px auto;
-    background: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #1f2937;
+    padding: 40px 20px;
 }
+
+.wrapper {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 50px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+}
+
 h1 {
     text-align: center;
-    margin-bottom: 40px;
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #111827;
 }
+
+.subtitle {
+    text-align: center;
+    color: #6b7280;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
+    font-size: 15px;
 }
-th, td {
-    padding: 15px;
-    text-align: center;
-}
+
 th {
-    background-color: #111827;
+    padding: 20px;
+    font-size: 16px;
+    background: #111827;
     color: white;
 }
-tr:nth-child(even) {
-    background-color: #f2f2f2;
+
+th:first-child {
+    border-top-left-radius: 10px;
 }
+
+th:last-child {
+    border-top-right-radius: 10px;
+}
+
+td {
+    padding: 18px 15px;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+tr:hover {
+    background-color: #f9fafb;
+}
+
+.feature {
+    font-weight: 600;
+    text-align: left;
+}
+
 .highlight {
-    background-color: #e6f4ea;
-    font-weight: bold;
+    background: #ecfdf5;
+    font-weight: 600;
+    color: #065f46;
 }
-.note {
-    margin-top: 30px;
-    font-size: 14px;
-    color: #555;
-}
+
 .badge {
-    background-color: #16a34a;
+    display: inline-block;
+    background: #16a34a;
     color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 6px 12px;
+    border-radius: 20px;
     font-size: 12px;
+    margin-top: 10px;
+}
+
+.note {
+    margin-top: 40px;
+    padding: 25px;
+    background: #f3f4f6;
+    border-left: 6px solid #16a34a;
+    border-radius: 8px;
+    line-height: 1.6;
+    font-size: 14px;
+    color: #374151;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 13px;
+    color: #9ca3af;
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 25px;
+    }
+    table {
+        font-size: 13px;
+    }
 }
 </style>
 </head>
+
 <body>
 
-<div class="container">
+<div class="wrapper">
+<div class="card">
+
 <h1>Confronto Tecnico GPU</h1>
+<div class="subtitle">
+Analisi comparativa tra le soluzioni grafiche proposte
+</div>
 
 <table>
 <tr>
 <th>Caratteristica</th>
-<th>NVIDIA GeForce RTX 5070 12GB GDDR7 <span class="badge">Proposta nel preventivo</span></th>
+<th>
+NVIDIA GeForce RTX 5070 12GB GDDR7<br>
+<span class="badge">Soluzione proposta nel preventivo</span>
+</th>
 <th>AMD Radeon RX 9060 XT 16GB GDDR6</th>
 </tr>
 
 <tr>
-<td>Architettura</td>
+<td class="feature">Architettura</td>
 <td class="highlight">Blackwell (ultima generazione)</td>
 <td>RDNA 4</td>
 </tr>
 
 <tr>
-<td>Memoria</td>
-<td>12GB GDDR7 (più veloce)</td>
+<td class="feature">Memoria</td>
+<td>12GB GDDR7 (maggiore velocità)</td>
 <td>16GB GDDR6</td>
 </tr>
 
 <tr>
-<td>Ray Tracing</td>
+<td class="feature">Ray Tracing</td>
 <td class="highlight">Prestazioni superiori</td>
 <td>Buone prestazioni</td>
 </tr>
 
 <tr>
-<td>Tecnologia AI Upscaling</td>
-<td class="highlight">DLSS (con Frame Generation)</td>
+<td class="feature">Tecnologia AI Upscaling</td>
+<td class="highlight">DLSS con Frame Generation</td>
 <td>FSR</td>
 </tr>
 
 <tr>
-<td>Consumi energetici</td>
-<td>Ottimizzati per efficienza</td>
-<td>Generalmente superiori</td>
+<td class="feature">Efficienza energetica</td>
+<td class="highlight">Ottimizzata per consumi ridotti</td>
+<td>Consumi generalmente superiori</td>
 </tr>
 
 <tr>
-<td>Destinazione d’uso</td>
+<td class="feature">Destinazione d’uso ideale</td>
 <td class="highlight">Gaming avanzato, rendering, AI</td>
 <td>Gaming ad alta risoluzione</td>
 </tr>
@@ -107,11 +185,16 @@ tr:nth-child(even) {
 </table>
 
 <div class="note">
-Nota: La RTX 5070 è stata selezionata nel preventivo per garantire maggiore efficienza energetica,
-prestazioni superiori in Ray Tracing e supporto avanzato alle tecnologie AI (DLSS),
-mantenendo un eccellente equilibrio tra performance e affidabilità.
+La RTX 5070 è stata selezionata per garantire un equilibrio ottimale tra prestazioni,
+efficienza energetica e supporto alle tecnologie di intelligenza artificiale di ultima generazione,
+offrendo una soluzione più completa e orientata al futuro.
 </div>
 
+<div class="footer">
+Documento informativo a supporto del preventivo tecnico.
+</div>
+
+</div>
 </div>
 
 </body>
