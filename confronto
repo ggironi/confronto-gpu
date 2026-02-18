@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confronto GPU - RTX 5070 vs RX 9060 XT</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+th {
+    background-color: #111827;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.highlight {
+    background-color: #e6f4ea;
+    font-weight: bold;
+}
+.note {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #555;
+}
+.badge {
+    background-color: #16a34a;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<h1>Confronto Tecnico GPU</h1>
+
+<table>
+<tr>
+<th>Caratteristica</th>
+<th>NVIDIA GeForce RTX 5070 12GB GDDR7 <span class="badge">Proposta nel preventivo</span></th>
+<th>AMD Radeon RX 9060 XT 16GB GDDR6</th>
+</tr>
+
+<tr>
+<td>Architettura</td>
+<td class="highlight">Blackwell (ultima generazione)</td>
+<td>RDNA 4</td>
+</tr>
+
+<tr>
+<td>Memoria</td>
+<td>12GB GDDR7 (più veloce)</td>
+<td>16GB GDDR6</td>
+</tr>
+
+<tr>
+<td>Ray Tracing</td>
+<td class="highlight">Prestazioni superiori</td>
+<td>Buone prestazioni</td>
+</tr>
+
+<tr>
+<td>Tecnologia AI Upscaling</td>
+<td class="highlight">DLSS (con Frame Generation)</td>
+<td>FSR</td>
+</tr>
+
+<tr>
+<td>Consumi energetici</td>
+<td>Ottimizzati per efficienza</td>
+<td>Generalmente superiori</td>
+</tr>
+
+<tr>
+<td>Destinazione d’uso</td>
+<td class="highlight">Gaming avanzato, rendering, AI</td>
+<td>Gaming ad alta risoluzione</td>
+</tr>
+
+</table>
+
+<div class="note">
+Nota: La RTX 5070 è stata selezionata nel preventivo per garantire maggiore efficienza energetica,
+prestazioni superiori in Ray Tracing e supporto avanzato alle tecnologie AI (DLSS),
+mantenendo un eccellente equilibrio tra performance e affidabilità.
+</div>
+
+</div>
+
+</body>
+</html>
